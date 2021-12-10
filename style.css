@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+img {
+  width: 100%;
+  height: 0 auto;
+}
+.img_box {
+  width: 650px;
+  height: 350px;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 5px 15px 0px #585858;
+  animation: slide 10s ease infinite;
+}
+
+@keyframes slide {
+  0% {
+    background: url("https://images.pexels.com/photos/3329812/pexels-photo-3329812.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+      no-repeat center;
+    background-size: 100% 100%;
+  }
+  25% {
+    background: url("https://images.pexels.com/photos/1809698/pexels-photo-1809698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      no-repeat center;
+    background-size: 100% 100%;
+  }
+  50% {
+    background: url("https://images.pexels.com/photos/1809698/pexels-photo-1809698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      no-repeat center;
+    background-size: 100% 100%;
+  }
+  75% {
+    background: url("https://images.pexels.com/photos/10308427/pexels-photo-10308427.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+      no-repeat center;
+    background-size: 100% 100%;
+  }
+  100% {
+    background: url("https://images.pexels.com/photos/8203904/pexels-photo-8203904.jpeg?auto=compress&cs=tinysrgb&h=650&w=940")
+      no-repeat center;
+    background-size: 100% 100%;
+  }
+}
+
+/* ! img 1 */
+/* ? https://images.pexels.com/photos/10308427/pexels-photo-10308427.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260 */
+/* ! img 2 */
+/* ? https://images.pexels.com/photos/3329812/pexels-photo-3329812.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260 */
+/* ! img 3 */
+/* ? https://images.pexels.com/photos/1809698/pexels-photo-1809698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 */
+
+@media (max-width: 768px) {
+  body {
+    justify-content: stretch;
+  }
+  .container {
+    width: 100%;
+  }
+  .img_box {
+    width: 100%;
+  }
+}
